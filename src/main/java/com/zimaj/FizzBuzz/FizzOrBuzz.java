@@ -12,11 +12,6 @@ public class FizzOrBuzz {
 
         for (int i=1; i<=value; i++) {
             
-            /*  Zuallererst wird geprüft ob die Eingabe durch beide Zahlen teilbar ist und falls nicht ob eine der beiden teilbar ist.
-                Drei reine IF Abfragen sind hier ungünstig, da mehrere Fälle zutreffen können und dadurch ungünstigerweise mehrmals die
-                list.add() Funktion ausgeführt wird. Ein Else muss nicht berücksichtigt werden, da in diesem Fall einfach nur der nächste
-                Wert ausgegeben werden soll.
-            */  
             if (i%3 == 0 && i%5 == 0) {
                 list.add("FizzBuzz");
             }
