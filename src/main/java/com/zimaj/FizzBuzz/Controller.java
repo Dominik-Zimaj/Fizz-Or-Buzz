@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
+    // URL localhost:8080/result?value="Einen positiven long Wert"
     @GetMapping("/result")
     public ArrayList<String> getFizzOrBuzz(@RequestParam (value = "value")long value) {
         
